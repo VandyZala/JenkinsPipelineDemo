@@ -11,5 +11,10 @@ pipeline {
         bat 'python hello.py'
       }
     }
+    stage('Selenium') {
+      steps {
+        bat 'python Jankins_automation.py'
+      }
+    }
   }
 }
