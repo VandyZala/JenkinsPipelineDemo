@@ -1,19 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('version') {
+    stage('Build') {
       steps {
-        bat 'python --version'
+        echo 'Building the Project...'
       }
     }
-    stage('hello') {
+    stage('Deploy') {
       steps {
-        bat 'python hello.py'
+        echo 'Deploying the Project...'
       }
     }
-    stage('Selenium') {
+    stage('Test') {
       steps {
-        bat 'python Jankins_automation.py'
+        bat 'Testing the Project...'
       }
     }
   }
