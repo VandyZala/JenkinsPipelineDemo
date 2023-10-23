@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat 'Testing the Project...'
+        echo 'Testing the Project...'
       }
     }
   }
